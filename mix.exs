@@ -4,12 +4,14 @@ defmodule BotArmyAuditorLlmHarness.MixProject do
   def project do
     [
       app: :bot_army_auditor_llm_harness,
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.14",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       releases: [
-        llm_harness_bot: [
+        auditor_llm_harness_bot: [
+          applications: [bot_army_auditor_llm_harness: :permanent]
+        ]
           applications: [bot_army_auditor_llm_harness: :permanent]
         ]
       ]
