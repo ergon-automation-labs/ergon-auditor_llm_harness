@@ -12,8 +12,6 @@ defmodule BotArmyAuditorLlmHarness.MixProject do
         auditor_llm_harness_bot: [
           applications: [bot_army_auditor_llm_harness: :permanent]
         ]
-          applications: [bot_army_auditor_llm_harness: :permanent]
-        ]
       ]
     ]
   end
